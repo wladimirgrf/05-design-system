@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@ignite-ui/eslint-config": "*",
     "@storybook/addon-essentials": "^7.6.6",
     "@storybook/addon-interactions": "^7.6.6",
     "@storybook/addon-links": "^7.6.6",
@@ -26,12 +27,9 @@
     "@storybook/test": "^7.6.6",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
-    "@typescript-eslint/eslint-plugin": "^6.14.0",
-    "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react": "^4.2.1",
     "storybook": "^7.6.6",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.8",
-    "@ignite-ui/eslint-config": "*"
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
   }
 }

@@ -1,3 +1,6 @@
 {
-  "extends": "@ignite-ui/eslint-config"
+  "extends": "@ignite-ui/eslint-config",
+  "rules": {
+    "react/no-unescaped-entities": "off"
+  }
 }
