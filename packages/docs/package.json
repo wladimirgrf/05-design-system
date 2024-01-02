@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build",
-    "lint": "eslint src/**/*.ts* --fix"
+    "lint": "eslint src/**/*.ts* --fix",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.0.15",
@@ -25,6 +26,7 @@
     "@storybook/blocks": "^7.6.6",
     "@storybook/react": "^7.6.6",
     "@storybook/react-vite": "^7.6.6",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/test": "^7.6.6",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
