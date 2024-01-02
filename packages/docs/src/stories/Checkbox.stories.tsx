@@ -5,6 +5,7 @@ import { Box, Text, Checkbox, CheckboxProps } from '@ignite-ui/react'
 export default {
   title: 'Form/Checkbox',
   component: Checkbox,
+  tags: ['autodocs'],
   args: {},
   decorators: [
     (Story) => {

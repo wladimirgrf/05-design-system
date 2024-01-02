@@ -5,6 +5,7 @@ import { Text, TextProps } from '@ignite-ui/react'
 export default {
   title: 'Typography/Text',
   component: Text,
+  tags: ['autodocs'],
   args: {
     children:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores consequuntur harum iusto corrupti rerum provident? Numquam ratione dolor, culpa, beatae ab at natus eaque non unde aperiam eveniet molestiae? Odit.',

@@ -6,7 +6,7 @@ import { Button, ButtonProps } from '@ignite-ui/react'
 export default {
   title: 'Form/Button',
   component: Button,
-
+  tags: ['autodocs'],
   args: {
     children: 'Send',
   },
