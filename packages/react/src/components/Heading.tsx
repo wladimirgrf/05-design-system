@@ -10,7 +10,7 @@ export const Heading = styled('h2', {
 
   variants: {
     size: {
-      sm: { fontSize: '$xml' },
+      sm: { fontSize: '$xl' },
       md: { fontSize: '$2xl' },
       lg: { fontSize: '$4xl' },
       '2xl': { fontSize: '$5xl' },
