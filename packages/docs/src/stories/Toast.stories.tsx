@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Meta, StoryObj } from '@storybook/react'
 
-import { Box, Button, Toast, ToastProps } from '@ignite-ui/react'
+import { Button, Toast, ToastProps } from '@ignite-ui/react'
 
 export default {
   title: 'Data Display/Toast',
@@ -21,7 +21,7 @@ const TemplateWithState: React.FC<ToastProps> = ({
   const [open, setOpen] = useState(false)
 
   return (
-    <Box>
+    <>
       <Button onClick={() => setOpen((state) => !state)}>
         Add to calendar
       </Button>
@@ -31,7 +31,7 @@ const TemplateWithState: React.FC<ToastProps> = ({
         title={title}
         message={message}
       />
-    </Box>
+    </>
   )
 }
 
