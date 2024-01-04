@@ -1,17 +1,35 @@
 import * as Toast from '@radix-ui/react-toast'
 
-import { styled } from '../../styles'
+import { styled, keyframes } from '../../styles'
+
+const hide = keyframes({
+  from: { opacity: 1 },
+  to: { opacity: 0 },
+})
+
+const slideIn = keyframes({
+  from: { transform: 'translateX(100%)' },
+  to: { transform: 'translateX(0)' },
+})
 
 export const ToastContainer = styled(Toast.Root, {
   width: '22.5rem',
   padding: '$3 $5',
   borderRadius: 6,
-  backgroundColor: '$gray600',
-  boxShadow: '0 0 0 1px $colors$gray800',
+  backgroundColor: '$gray800',
+  boxShadow: '0 0 0 1px $colors$gray600',
 
   display: 'grid',
   gridTemplateAreas: "'title action' 'description action'",
   gridTemplateColumns: 'auto max-content',
+
+  '&[data-state="closed"]': {
+    animation: `${hide} 200ms ease-in`,
+  },
+
+  '&[data-state="open"]': {
+    animation: `${slideIn} 200ms ease-in`,
+  },
 })
 
 export const Title = styled(Toast.Title, {

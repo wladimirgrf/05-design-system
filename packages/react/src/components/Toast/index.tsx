@@ -32,3 +32,5 @@ export function Toast({ title, message, open, ...props }: ToastProps) {
     </ToastComponent.Provider>
   )
 }
+
+Toast.displayName = 'Toast'
